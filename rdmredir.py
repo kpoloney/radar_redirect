@@ -1,8 +1,10 @@
 import os
 import csv
 from flask import Flask, redirect
+from flask_talisman import Talisman
 
 app = Flask(__name__)
+Talisman(app)
 
 tomb = 'https://www.lib.sfu.ca/help/publish/research-data-management/radar-retire'
 
